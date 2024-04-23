@@ -5,9 +5,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Times New Roman', Times, serif,
     monospace;
+}
+
+/* @keyframes blink-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+} */
+
+.blink {
+  /* animation:blink-animation 0.5s linear; */
+  color: turquoise;
+  text-align: center;
+  font-size: 100px;
+  padding-top: 200px;
+}
+
+.loader {
+  border: 16px solid #25e40c;
+  border-top: 16px solid turquoise;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.not-found {
+  padding-top: 5%;
+}
+
+.search{
+  border: none;
+  font-size: 20px;
+  border-bottom: 3px solid black;
+  margin: 4rem 0rem 0rem 10rem;
 }
